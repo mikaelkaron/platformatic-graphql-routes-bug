@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "platformatic start",
+    "test": "node --test test/**"
+  },
+  "devDependencies": {
+    "fastify": "^4.23.2",
+    "typescript": "^5.3.0",
+    "@types/node": "20.8.10"
+  },
+  "dependencies": {
+    "platformatic": "^1.16.0"
+  },
+  "engines": {
+    "node": "^18.8.0 || >=20.6.0"
+  }
+}
