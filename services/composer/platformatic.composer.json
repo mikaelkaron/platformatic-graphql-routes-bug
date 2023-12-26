@@ -1,11 +1,30 @@
 {
   "$schema": "https://platformatic.dev/schemas/v1.16.0/composer",
   "composer": {
-    "services": [],
+    "graphql": {
+      "graphiql": true
+    },
+    "services": [
+      {
+        "id": "db",
+        "graphql": true,
+        "openapi": {
+          "url": "/documentation/json"
+        }
+      }
+    ],
     "refreshTimeout": 1000
   },
   "watch": true,
   "plugins": {
+    "packages": [
+      {
+        "name": "@fastify/static",
+        "options": {
+          "root": "/tmp"
+        }
+      }
+    ],
     "paths": [
       {
         "path": "./plugins",
